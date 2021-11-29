@@ -1,0 +1,88 @@
+.HomePage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    flex-grow: 1;
+    width: 70%;
+    min-height: 768px;
+    z-index: 90;
+}
+
+.MyInfo {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    z-index: 100;
+    color: #fff;
+}
+
+.MyInfo h2 {
+    margin: 0;
+    font-family: 'Marck Script', cursive;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.MyInfo h1 {
+    margin: 0  0 20px 0;
+    font-size: 48px;
+}
+
+.MyInfo h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.7em;
+    word-spacing: 0.5em;
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 1199px) {
+    
+}
+
+@media screen and (max-width: 991px) {
+    .MyInfo h2 {
+        font-size: 28px;
+    }
+    
+    .MyInfo h1 {
+        margin: 0  0 15px 0;
+        font-size: 36px;
+    }
+    
+    .MyInfo h3 {
+        font-size: 16px;
+        letter-spacing: 0.4em;
+        word-spacing: 0.2em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .HomePage {
+        width: 100%;
+    }
+
+    .MyInfo h2 {
+        font-size: 26px;
+    }
+    
+    .MyInfo h1 {
+        margin: 0  0 15px 0;
+        font-size: 28px;
+    }
+    
+    .MyInfo h3 {
+        font-size: 13px;
+        letter-spacing: 0.4em;
+        word-spacing: 0.3em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    
+}

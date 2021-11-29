@@ -1,0 +1,87 @@
+.SidebarMenuItem {
+    list-style: none;
+    padding: 15px 20px 15px 30px;
+    transition: .5s;
+    transform-origin: right center;
+    cursor: pointer;
+}
+
+.SidebarMenuItem:hover {
+    transform: scaleX(1.05);
+    -webkit-backface-visibility: hidden; 
+    /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+}
+
+.SidebarMenuItem a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+.SidebarMenuItem a:hover, :active {
+    opacity: .7;
+}
+
+.SidebarMenuItem.homePage {
+    background: #F5BE00;
+}
+
+.SidebarMenuItem.aboutMe {
+    background: #F8951D;
+}
+
+.SidebarMenuItem.skills {
+    background: #F36422;
+}
+
+.SidebarMenuItem.experience {
+    background: #ED1B24;
+}
+
+.SidebarMenuItem.education {
+    background: #E10336;
+}
+
+.SidebarMenuItem.portfolio {
+    background: #873F95;
+}
+
+.SidebarMenuItem.contact {
+    background: #3B70B4;
+}
+
+.SidebarMenuItem.downloadResume {
+    background: #03AC81;
+}
+
+.SidebarMenuItem.socialNetworks {
+    background: #87C15D;
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 1199px) {
+    
+}
+
+@media screen and (max-width: 991px) {
+    .SidebarMenuItem a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 575px) {
+    
+}

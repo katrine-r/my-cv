@@ -1,0 +1,40 @@
+.MainPageCV {
+    flex-direction: column; 
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+    min-height: 768px;
+    background: #fff;
+}
+
+.MenuBurger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background: none;
+    border: none;
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 991px) {
+    
+}
+
+@media screen and (max-width: 767px) {
+    .MenuBurger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    
+}

@@ -1,0 +1,110 @@
+.Sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    min-height: 768px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    background: #87C15D;
+    z-index: 90; 
+}
+
+.MenuMainInfo {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    color: #fff;
+    background: #2C3039;
+}
+
+.MenuMainInfo img {
+    margin-right: 30px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+}
+
+.MenuMainInfo h2 {
+    margin: 0;
+    font-family: 'Marck Script', cursive;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.InfoName h2:last-child {
+    margin-left: 50px;
+}
+
+.NavMenu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.MenuSocialNetworks {
+    display: flex;
+    flex-grow: 1;
+    padding: 15px 20px 20px 30px;
+    transition: .5s;
+}
+
+.MenuSocialNetworks a:hover, :active {
+    opacity: .7;
+    transform: scale(1.20);
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 1199px) {
+    .MenuMainInfo img {
+        margin-right: 20px;
+    }
+    
+    .MenuMainInfo h2 {
+        font-size: 24px;
+    }
+
+    .InfoName h2:last-child {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .MenuMainInfo {
+        padding: 20px;
+    }
+    
+    .MenuMainInfo img {
+        margin-right: 20px;
+        height: 70px;
+        width: 70px;
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, .5);
+    }
+    
+    .MenuMainInfo img {
+        margin-right: 20px;
+    }
+    
+    .MenuMainInfo h2 {
+        font-size: 18px;
+    }
+
+    .MenuSocialNetworks {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Sidebar {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    
+}
