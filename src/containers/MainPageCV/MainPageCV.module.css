@@ -3,18 +3,24 @@
     flex-grow: 1;
     position: relative;
     width: 100%;
+    height: 100vh;
     min-height: 768px;
+    max-height: 1024px;
     background: #fff;
 }
 
 .MenuBurger {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 40px;
+    right: 30px;
     z-index: 100;
     background: none;
     border: none;
     display: none;
+}
+
+.MenuBurger path {
+    fill: #000;
 }
 
 @media screen and (max-width: 1200px) {

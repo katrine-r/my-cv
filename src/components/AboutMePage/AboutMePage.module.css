@@ -1,0 +1,86 @@
+.AboutMePage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 100px 50px 70px 50px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 70%;
+    min-height: 768px;
+    max-height: 1024px;
+    z-index: 90;
+}
+
+.WrapperAboutMe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.AboutMeInfo {
+    margin: 30px 50px 30px 70px;
+    font-family: 'Marck Script', cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.AboutMePage h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.4em;
+    word-spacing: 0.3em;
+}
+
+.AboutMePage h1 {
+    margin: 12px 0 24px 0;
+    font-size: 48px;
+}
+
+.AboutMeText {
+    line-height: 1.5em;
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 1199px) {
+    
+}
+
+@media screen and (max-width: 991px) {
+    .AboutMeInfo {
+        margin: 20px 30px 20px 50px;
+        font-size: 16px;
+    }
+    
+    .AboutMePage h2 {
+        font-size: 14px;
+        letter-spacing: 0.3em;
+        word-spacing: 0.2em;
+    }
+    
+    .AboutMePage h1 {
+        margin: 8px 0 20px 0;
+        font-size: 32px;
+    }
+    
+    .AboutMeText {
+        line-height: 1.5em;
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .AboutMePage {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    
+}

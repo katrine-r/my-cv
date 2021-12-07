@@ -5,11 +5,10 @@ import myPhoto_2472 from '../../myPhoto_2472.jpg'
 import { SVGiconsSelector } from '../UI/SVGiconsSelector/SVGiconsSelector'
 
 const Sidebar = props => {
-    
     return (
         <div className={classes.Sidebar}>
             <div className={classes.MenuMainInfo}>
-                <img src={myPhoto_2472} alt='My photo' />
+                <img src={myPhoto_2472} alt='Katrine' />
                 <div className={classes.InfoName}>
                     <h2>Катерина</h2>
                     <h2>Романенко</h2>
@@ -22,6 +21,7 @@ const Sidebar = props => {
                             <SidebarMenuItem 
                             key={index}
                             link={link} 
+                            onMenuClick={props.onMenuClick}
                             />
                         )
                     })}

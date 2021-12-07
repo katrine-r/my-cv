@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './SidebarMenuItem.module.css'
+import { NavLink } from 'react-router-dom'
 import { SVGiconsSelector } from '../../UI/SVGiconsSelector/SVGiconsSelector'
 
 const SidebarMenuItem = props => {
@@ -10,9 +11,11 @@ const SidebarMenuItem = props => {
     }
 
     return (
-        <li className={colorMenu.join(' ')}>
+        <li className={colorMenu.join(' ')} onClick={() => props.onMenuClick(props.link.id)} >      
             {props.link.id
-            ? <a href='#'><SVGiconsSelector id={props.link.id} /> {props.link.name} </a> 
+            ? <NavLink
+                to={props.link.to}
+            > <SVGiconsSelector id={props.link.id} /> {props.link.name} </NavLink> 
             : null
             }
         </li>

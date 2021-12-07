@@ -6,7 +6,8 @@
     cursor: pointer;
 }
 
-.SidebarMenuItem:hover {
+.SidebarMenuItem:hover,
+.SidebarMenuItem:active {
     transform: scaleX(1.05);
     -webkit-backface-visibility: hidden; 
     /* Chrome, Safari, Opera */
@@ -23,7 +24,8 @@
     color: #fff;
 }
 
-.SidebarMenuItem a:hover, :active {
+.SidebarMenuItem a:hover,
+.SidebarMenuItem a:active {
     opacity: .7;
 }
 

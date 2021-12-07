@@ -5,6 +5,8 @@
     bottom: 0;
     width: 30%;
     min-height: 768px;
+    max-height: 1024px;
+    height: 100vh;
     flex-grow: 1;
     box-sizing: border-box;
     background: #87C15D;
@@ -51,7 +53,8 @@
     transition: .5s;
 }
 
-.MenuSocialNetworks a:hover, :active {
+.MenuSocialNetworks a:hover,
+.MenuSocialNetworks a:active {
     opacity: .7;
     transform: scale(1.20);
 }
