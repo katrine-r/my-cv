@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './AboutMePage.module.css'
 
-const AboutMePage = props => {
+const AboutMePage = () => {
     return (
         <div className={classes.AboutMePage}>
             <div className={classes.WrapperAboutMe}>

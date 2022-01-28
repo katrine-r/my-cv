@@ -37,14 +37,6 @@
     word-spacing: 0.5em;
 }
 
-@media screen and (max-width: 1200px) {
-    
-}
-
-@media screen and (max-width: 1199px) {
-    
-}
-
 @media screen and (max-width: 991px) {
     .MyInfo h2 {
         font-size: 28px;

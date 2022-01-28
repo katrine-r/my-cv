@@ -1,16 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import classes from './Layout.module.css'
+import { Outlet } from 'react-router-dom';
+import Sidebar from '../../components/Sidebar/Sidebar';
 
-class Layout extends Component {
-    render() {
-        return (
-            <div className={classes.Layout}>
-                <main>
-                    {this.props.children}
-                </main>
-            </div>
-        )
-    }
+const Layout = () => {
+    return (
+        <div className={classes.Layout}>
+            <main>
+                <Outlet />
+                <Sidebar />
+            </main>
+        </div>
+    )
 }
 
 export default Layout

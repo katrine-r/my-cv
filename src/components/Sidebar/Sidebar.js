@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import classes from './Sidebar.module.css'
 import SidebarMenuItem from './SidebarMenuItem/SidebarMenuItem'
 import myPhoto_2472 from '../../myPhoto_2472.jpg'
 import { SVGiconsSelector } from '../UI/SVGiconsSelector/SVGiconsSelector'
+import { LinksMenuContext } from '../../context';
 
-const Sidebar = props => {
+const Sidebar = () => {
+    const { linksMenu } = useContext(LinksMenuContext);
+
+    const onClickMenuItemHandler = (menuItemId) => {
+      console.log('onClick works ', menuItemId);
+    };
     return (
         <div className={classes.Sidebar}>
             <div className={classes.MenuMainInfo}>
@@ -16,12 +22,14 @@ const Sidebar = props => {
             </div>
             <nav className={classes.NavMenu}>
                 <ul>
-                    { props.linksMenu.map((link, index) => {
+                    { linksMenu.map((link, index) => {
                         return (
                             <SidebarMenuItem 
-                            key={index}
-                            link={link} 
-                            onMenuClick={props.onMenuClick}
+                                key={link.id + index}
+                                to={link.to}
+                                id={link.id}
+                                name={link.name}
+                                onClickMenuItemHandler={onClickMenuItemHandler}
                             />
                         )
                     })}
